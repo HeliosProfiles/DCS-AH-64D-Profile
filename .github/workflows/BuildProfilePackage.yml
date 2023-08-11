@@ -50,10 +50,10 @@ jobs:
           fi
       - name: Bump version and push 
         id: bump_tag
-        uses: anothrNick/github-tag-action@1.36.0
+        uses: anothrNick/github-tag-action@1.64.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO_OWNERREPO_OWNER: BlueFinBima
+          REPO_OWNER: HeliosVirtualCockpit
           DEFAULT_BUMP: 'patch'
           INITIAL_VERSION: '0.0.11'
       - name: Check outputs
