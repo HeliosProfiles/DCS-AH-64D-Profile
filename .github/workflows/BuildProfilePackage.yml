@@ -19,6 +19,7 @@ env:
   VEHICLECOMMONNAME: AH-64D Apache
   MINHELIOSRELEASE: 1.6.5306.0000
   PROFILENAME: Apache
+  AUTHOR: BlueFinBima
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -151,7 +152,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: ${{ env.AUTHOR }} ${{ env.VEHICLECOMMONNAME }} V${{ steps.bump_tag.outputs.tag }}
+          release_name: ${{ env.VEHICLECOMMONNAME }} V${{ steps.bump_tag.outputs.tag }} by ${{ env.AUTHOR }}
           body: ${{ env.ABOUT }}
           draft: true
           prerelease: false
