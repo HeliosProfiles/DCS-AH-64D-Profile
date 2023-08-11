@@ -48,7 +48,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO_OWNER: HeliosProfiles
           DEFAULT_BUMP: 'patch'
-          INITIAL_VERSION: '0.0.11'
+          INITIAL_VERSION: '1.0.0'
       - name: Check outputs
         run: |
           #env
@@ -144,6 +144,8 @@ jobs:
         run: |
           echo "ABOUT<<EOF" >> $GITHUB_ENV
           echo "$(cat './${{ env.VEHICLECOMMONNAME }} - About this profile.md')" >> $GITHUB_ENV
+          echo "$(cat './README.md')" >> $GITHUB_ENV
+          echo "$(cat './LICENSE')" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
       - name: Create Release
         id: create_release
