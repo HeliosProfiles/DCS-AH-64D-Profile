@@ -138,7 +138,7 @@ jobs:
           name: ${{ env.VEHICLECOMMONNAME }} helios16 ${{ steps.vars.outputs.HELIOSBUILDTYPE }} package
           path: output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}_V${{ steps.bump_tag.outputs.tag }}.helios16
           retention-days: 2
-                - name: Read About file
+      - name: Read About file
         id: getAbout
         run: |
           echo "ABOUT<<EOF" >> $GITHUB_ENV
