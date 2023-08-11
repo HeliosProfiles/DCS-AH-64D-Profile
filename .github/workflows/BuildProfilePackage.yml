@@ -8,9 +8,9 @@ name: CreateHelios16
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, master, dev, test ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master, dev, test ]
+    branches: [ main ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -26,7 +26,8 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -36,24 +37,15 @@ jobs:
       - name: Set outputs
         id: vars
         run: |
-          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
-          echo "github.ref = ${{github.ref}}"
-          if [ ${{ github.ref }} == "refs/heads/dev" ]; then
-            echo "::set-output name=HELIOSBUILDTYPE::Dev"
-            echo "::set-output name=HELIOSDIRECTORYNAME::Dev"
-          elif [ ${{ github.ref }} == "refs/heads/test" ]; then
-            echo "::set-output name=HELIOSBUILDTYPE::Test"
-            echo "::set-output name=HELIOSDIRECTORYNAME::"
-          else
-            echo "::set-output name=HELIOSBUILDTYPE::"
-            echo "::set-output name=HELIOSDIRECTORYNAME::"
-          fi
+          echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+          echo "date=$(date +'%d-%b-%Y')" >> $GITHUB_OUTPUT
+          echo "actor=${GITHUB_ACTOR}" >> $GITHUB_OUTPUT
       - name: Bump version and push 
         id: bump_tag
         uses: anothrNick/github-tag-action@1.64.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO_OWNER: HeliosVirtualCockpit
+          REPO_OWNER: HeliosProfiles
           DEFAULT_BUMP: 'patch'
           INITIAL_VERSION: '0.0.11'
       - name: Check outputs
