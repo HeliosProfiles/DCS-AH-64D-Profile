@@ -1,7 +1,7 @@
-[![CreateHelios16](https://github.com/HeliosProfiles/DCS-AH-64D-Profile/actions/workflows/BuildProfilePackage.yml/badge.svg)](https://github.com/HeliosProfiles/DCS-AH-64D-Profile/actions/workflows/BuildProfilePackage.yml)
+[![CreateHelios16](https://github.com/HeliosProfiles/DCS-AH-64D-Profile-By-BlueFinBima/actions/workflows/BuildProfilePackage.yml/badge.svg)](https://github.com/HeliosProfiles/DCS-AH-64D-Profile-By-BlueFinBima/actions/workflows/BuildProfilePackage.yml)
 # DCS-AH-64D-Profile by BlueFinBima
 
-[Download Current Release](https://github.com/HeliosProfiles/DCS-AH-64D-Profile/releases/Latest)
+[Download Current Release](https://github.com/HeliosProfiles/DCS-AH-64D-Profile-By-BlueFinBima/releases/Latest)
 
 [Read the Wiki](https://github.com/BlueFinBima/DCS-AH-64D-Profile/wiki)
 
