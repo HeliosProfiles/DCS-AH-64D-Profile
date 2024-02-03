@@ -82,7 +82,7 @@
               <Location>585,205</Location>
               <Size>750,743</Size>
               <Hidden>False</Hidden>
-              <EmbeddedViewportName>AH_64D_TEDAC</EmbeddedViewportName>
+              <EmbeddedViewportName>TEDAC</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.CPGRIGHT" Name="MFD Right (CP/G)" SnapTarget="True" Locked="False">

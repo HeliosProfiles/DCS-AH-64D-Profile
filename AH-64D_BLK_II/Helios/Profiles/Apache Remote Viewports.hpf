@@ -128,8 +128,8 @@
           <Location>900,796</Location>
           <Size>550,550</Size>
           <Hidden>False</Hidden>
-          <ViewportName>AH_64D_TEDAC</ViewportName>
-          <RequiresPatches>True</RequiresPatches>
+          <ViewportName>TEDAC</ViewportName>
+          <RequiresPatches>False</RequiresPatches>
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="AH64D Apache EUFD_CPG" SnapTarget="True" Locked="False">
