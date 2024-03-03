@@ -55,7 +55,7 @@
               <Location>585,205</Location>
               <Size>750,743</Size>
               <Hidden>False</Hidden>
-              <EmbeddedViewportName>AH_64D_TEDAC</EmbeddedViewportName>
+              <EmbeddedViewportName>TEDAC</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.CPGRIGHT" Name="MFD Right (CP/G)" SnapTarget="True" Locked="False">
@@ -63,6 +63,7 @@
               <Size>585,550</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_RIGHT_MFCD_CPG</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.CPGLEFT" Name="MFD Left (CP/G)" SnapTarget="True" Locked="False">
@@ -70,6 +71,7 @@
               <Size>585,550</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_LEFT_MFCD_CPG</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Small KU CPG Panel" SnapTarget="True" Locked="False">
@@ -105,6 +107,7 @@
               <Size>610,205</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_EUFD_CPG</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Fire Panel CPG" SnapTarget="True" Locked="False">

@@ -82,7 +82,7 @@
               <Location>585,205</Location>
               <Size>750,743</Size>
               <Hidden>False</Hidden>
-              <EmbeddedViewportName>AH_64D_TEDAC</EmbeddedViewportName>
+              <EmbeddedViewportName>TEDAC</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.CPGRIGHT" Name="MFD Right (CP/G)" SnapTarget="True" Locked="False">
@@ -90,6 +90,7 @@
               <Size>585,550</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_RIGHT_MFCD_CPG</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.CPGLEFT" Name="MFD Left (CP/G)" SnapTarget="True" Locked="False">
@@ -97,6 +98,7 @@
               <Size>585,550</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_LEFT_MFCD_CPG</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Small KU CPG Panel" SnapTarget="True" Locked="False">
@@ -132,6 +134,7 @@
               <Size>610,205</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_EUFD_CPG</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Fire Panel CPG" SnapTarget="True" Locked="False">
@@ -2475,6 +2478,7 @@
               <Size>531,500</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_RIGHT_MFCD_PLT</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.PLTLEFT" Name="MFD Left (Pilot)" SnapTarget="True" Locked="False">
@@ -2482,6 +2486,7 @@
               <Size>531,500</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_LEFT_MFCD_PLT</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Small KU Pilot Panel" SnapTarget="True" Locked="False">
@@ -2577,6 +2582,7 @@
               <Size>732,249</Size>
               <Hidden>False</Hidden>
               <EmbeddedViewportName>AH_64D_EUFD_PLT</EmbeddedViewportName>
+              <RequiresPatches>True</RequiresPatches>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Fire Panel Pilot" SnapTarget="True" Locked="False">
@@ -5459,16 +5465,6 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (CP/G).Master Caution.changed" />
       <Action Target="Visual;Monitor 1.CPG Cockpit.Warnings Panel CPG.Master Caution;Helios.Base.IndicatorPushButton;Master Caution" Name="set.physical state" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.Pressure.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Altimeter;Helios.AH64D.Altimeter;Altimeter" Name="set.air pressure" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.Altitude.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Altimeter;Helios.AH64D.Altimeter;Altimeter" Name="set.altitude" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
