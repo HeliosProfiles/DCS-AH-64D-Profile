@@ -2137,60 +2137,6 @@
                 </Control>
               </Children>
             </Control>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="CPG Button" SnapTarget="True" Locked="False">
-              <Location>1809,1030</Location>
-              <Size>50,50</Size>
-              <Hidden>False</Hidden>
-              <Type>Momentary</Type>
-              <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
-              <PushedImage>{Helios}/Images/Buttons/tactile-dark-square-in.png</PushedImage>
-              <Text>
-                <Color>#E01FA200</Color>
-                <Font>
-                  <FontFamily>Franklin Gothic</FontFamily>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Normal</FontWeight>
-                  <FontSize>12</FontSize>
-                  <HorizontalAlignment>Center</HorizontalAlignment>
-                  <VerticalAlignment>Center</VerticalAlignment>
-                  <Padding>
-                    <Left>0</Left>
-                    <Top>0</Top>
-                    <Right>0</Right>
-                    <Bottom>0</Bottom>
-                  </Padding>
-                </Font>
-                <Text>CP/G COCKPIT</Text>
-              </Text>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="Control Center Button" SnapTarget="True" Locked="False">
-              <Location>1870,1030</Location>
-              <Size>50,50</Size>
-              <Hidden>False</Hidden>
-              <Type>Momentary</Type>
-              <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
-              <PushedImage>{Helios}/Images/Buttons/tactile-dark-square-in.png</PushedImage>
-              <Text>
-                <Color>#E01FA200</Color>
-                <Font>
-                  <FontFamily>Franklin Gothic</FontFamily>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Normal</FontWeight>
-                  <FontSize>12</FontSize>
-                  <HorizontalAlignment>Center</HorizontalAlignment>
-                  <VerticalAlignment>Center</VerticalAlignment>
-                  <Padding>
-                    <Left>0</Left>
-                    <Top>0</Top>
-                    <Right>0</Right>
-                    <Bottom>0</Bottom>
-                  </Padding>
-                </Font>
-                <Text>CONTROL CENTER</Text>
-              </Text>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Master Zeroize Panel" SnapTarget="True" Locked="False">
               <Location>1517,252</Location>
               <Size>108,176</Size>
@@ -2459,7 +2405,7 @@
               </Children>
             </Control>
             <Control TypeIdentifier="Helios.AH64D.FAT" Name="FAT" SnapTarget="True" Locked="False">
-              <Location>0,675</Location>
+              <Location>124,0</Location>
               <Size>136,140</Size>
               <Hidden>False</Hidden>
               <Children />
@@ -2468,7 +2414,7 @@
               <Image>AH-64D_blk_II\BlueFinBima\FAT\FAT_Bezel.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
-              <Location>0,676</Location>
+              <Location>124,1</Location>
               <Size>136,136</Size>
               <Hidden>False</Hidden>
               <Children />
@@ -2545,7 +2491,7 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="Maximize Comms Panel Button" SnapTarget="True" Locked="False">
-              <Location>1744,1030</Location>
+              <Location>1870,1030</Location>
               <Size>50,50</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
@@ -3024,6 +2970,71 @@
                   <MinValue>0</MinValue>
                   <InitialRotation>219.391304347826</InitialRotation>
                   <RotationTravel>281.739130434783</RotationTravel>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.Panel" Name="Tail Wheel Panel" SnapTarget="True" Locked="False">
+              <Location>45,690</Location>
+              <Size>332,105</Size>
+              <Hidden>False</Hidden>
+              <Background />
+              <Interaction>
+                <AllowInteractionFull>False</AllowInteractionFull>
+                <AllowInteractionNone>True</AllowInteractionNone>
+                <AllowInteractionLegacy>False</AllowInteractionLegacy>
+              </Interaction>
+              <Children>
+                <Control TypeIdentifier="Helios.Base.Image" Name="Tail Wheel Background" SnapTarget="False" Locked="False">
+                  <Image>AH-64D_blk_II\BlueFinBima\Left_Hand_Pilot\Tail Wheel NVS Panel.png</Image>
+                  <Alignment>Stretched</Alignment>
+                  <CornerRadius>0</CornerRadius>
+                  <Location>0,0</Location>
+                  <Size>324,105</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="Tail Wheel Push Indicator" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+                  <OnTextColor>#FF8FD830</OnTextColor>
+                  <Location>68,37</Location>
+                  <Size>38,38</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+                  <Text>
+                    <Color>#108FD830</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>8</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Center</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>UNLOCK</Text>
+                  </Text>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="NVS Mode Toggle" SnapTarget="True" Locked="False">
+                  <Location>221,19</Location>
+                  <Size>36,74</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <PositionOneImage>{Helios}/Images/Toggles/orange-round-up.png</PositionOneImage>
+                  <PositionTwoImage>{Helios}/Images/Toggles/orange-round-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-round-down.png</PositionThreeImage>
+                  <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
               </Children>
@@ -3981,6 +3992,60 @@
                 </Control>
               </Children>
             </Control>
+            <Control TypeIdentifier="Helios.Base.PushButton" Name="CPG Button" SnapTarget="True" Locked="False">
+              <Location>662,1030</Location>
+              <Size>50,50</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
+              <PushedImage>{Helios}/Images/Buttons/tactile-dark-square-in.png</PushedImage>
+              <Text>
+                <Color>#E01FA200</Color>
+                <Font>
+                  <FontFamily>Franklin Gothic</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>12</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Center</VerticalAlignment>
+                  <Padding>
+                    <Left>0</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0</Bottom>
+                  </Padding>
+                </Font>
+                <Text>CP/G COCKPIT</Text>
+              </Text>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.PushButton" Name="Control Center Button" SnapTarget="True" Locked="False">
+              <Location>598,1030</Location>
+              <Size>50,50</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
+              <PushedImage>{Helios}/Images/Buttons/tactile-dark-square-in.png</PushedImage>
+              <Text>
+                <Color>#E01FA200</Color>
+                <Font>
+                  <FontFamily>Franklin Gothic</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>12</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Center</VerticalAlignment>
+                  <Padding>
+                    <Left>0</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0</Bottom>
+                  </Padding>
+                </Font>
+                <Text>CONTROL CENTER</Text>
+              </Text>
+              <Children />
+            </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Comms Panel" SnapTarget="True" Locked="False">
               <Location>1517,622</Location>
               <Size>403,394</Size>
@@ -4396,6 +4461,16 @@
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.CPG Cockpit.Small KU CPG Panel.Keyboard Unit (CP/G).Keyboard Unit (CP/G)_Scratchpad;Helios.Base.TextDisplay;Keyboard Unit (CP/G)_Scratchpad" Name="Keyboard Unit (CP/G)_Scratchpad.set.TextDisplay" />
       <StaticValue>BLUEFINBIMA _ProfileVersionNumber</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="set.position" />
+      <StaticValue>1</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Reset" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="set.position" />
+      <StaticValue>1</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button T1.changed" />
@@ -7308,6 +7383,21 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).Tail Wheel Unlocked Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Tail Wheel Panel.Tail Wheel Push Indicator;Helios.Base.IndicatorPushButton;Tail Wheel Push Indicator" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).Tail Wheel Unlock Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Tail Wheel Panel.Tail Wheel Push Indicator;Helios.Base.IndicatorPushButton;Tail Wheel Push Indicator" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="NVS (Pilot).Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Tail Wheel Panel.NVS Mode Toggle;Helios.Base.ThreeWayToggleSwitch;NVS Mode Toggle" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Control Center Button;Helios.Base.PushButton;Control Center Button" Name="pushed" />
       <Action Target="Interface;;Helios.Base.ProfileInterface;Profile" Name="show control center" />
       <StaticValue />
@@ -9763,36 +9853,6 @@
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit;Helios.Panel;Pilot Cockpit" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
-      <Action Target="Visual;Monitor 1.CPG Cockpit;Helios.Panel;CPG Cockpit" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
-      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="kill application" />
-      <StaticValue>Iris-Client</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
-      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
-      <StaticValue>"%ProgramFiles%\Helios Virtual Cockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_CPG.iris"</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <StaticValue>2</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Control Center Button;Helios.Base.PushButton;Control Center Button" Name="pushed" />
-      <Action Target="Interface;;Helios.Base.ProfileInterface;Profile" Name="show control center" />
-      <StaticValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).set.Master Zeroize Switch" />
       <TriggerValue />
@@ -11248,6 +11308,21 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Tail Wheel Panel.Tail Wheel Push Indicator;Helios.Base.IndicatorPushButton;Tail Wheel Push Indicator" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).push.Tail Wheel Unlocked Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Tail Wheel Panel.Tail Wheel Push Indicator;Helios.Base.IndicatorPushButton;Tail Wheel Push Indicator" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).release.Tail Wheel Unlocked Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Tail Wheel Panel.NVS Mode Toggle;Helios.Base.ThreeWayToggleSwitch;NVS Mode Toggle" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="NVS (Pilot).set.Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.KU Pilot Panel.Keyboard Unit (Pilot).Key A;Helios.Base.PushButton;Key A" Name="Keyboard Unit (Pilot)_Key A.pushed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key A" />
       <StaticValue />
@@ -12076,6 +12151,36 @@
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Maximize Left Panel Button;Helios.Base.PushButton;Maximize Left Panel Button" Name="released" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit.Maximize Left Panel Button;Helios.Base.PushButton;Maximize Left Panel Button" Name="set.hidden" />
       <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit;Helios.Panel;Pilot Cockpit" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit;Helios.Panel;CPG Cockpit" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="kill application" />
+      <StaticValue>Iris-Client</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
+      <StaticValue>"%ProgramFiles%\Helios Virtual Cockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_CPG.iris"</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>2</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Control Center Button;Helios.Base.PushButton;Control Center Button" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.ProfileInterface;Profile" Name="show control center" />
+      <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.ADF Volume Potentiometer;Helios.Base.Potentiometer;ADF Volume Potentiometer" Name="value.changed" />
