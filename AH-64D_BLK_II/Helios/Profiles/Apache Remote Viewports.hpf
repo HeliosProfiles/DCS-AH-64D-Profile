@@ -50,7 +50,7 @@
           <Location>0,0</Location>
           <Size>437,214</Size>
           <Hidden>False</Hidden>
-          <ViewportName>AH_64D_EUFD_PLT</ViewportName>
+          <EmbeddedViewportName>AH_64D_EUFD_PLT</EmbeddedViewportName>
           <RequiresPatches>True</RequiresPatches>
           <Children />
         </Control>
@@ -76,7 +76,7 @@
           <Location>539,0</Location>
           <Size>361,362</Size>
           <Hidden>False</Hidden>
-          <ViewportName>AH_64D_LEFT_MFCD_PLT</ViewportName>
+          <EmbeddedViewportName>AH_64D_LEFT_MFCD_PLT</EmbeddedViewportName>
           <RequiresPatches>True</RequiresPatches>
           <Children />
         </Control>
@@ -102,7 +102,7 @@
           <Location>539,362</Location>
           <Size>361,362</Size>
           <Hidden>False</Hidden>
-          <ViewportName>AH_64D_RIGHT_MFCD_PLT</ViewportName>
+          <EmbeddedViewportName>AH_64D_RIGHT_MFCD_PLT</EmbeddedViewportName>
           <RequiresPatches>True</RequiresPatches>
           <Children />
         </Control>
@@ -128,7 +128,7 @@
           <Location>900,796</Location>
           <Size>550,550</Size>
           <Hidden>False</Hidden>
-          <ViewportName>TEDAC</ViewportName>
+          <EmbeddedViewportName>TEDAC</EmbeddedViewportName>
           <RequiresPatches>False</RequiresPatches>
           <Children />
         </Control>
@@ -154,7 +154,7 @@
           <Location>1298,0</Location>
           <Size>362,181</Size>
           <Hidden>False</Hidden>
-          <ViewportName>AH_64D_EUFD_CPG</ViewportName>
+          <EmbeddedViewportName>AH_64D_EUFD_CPG</EmbeddedViewportName>
           <RequiresPatches>True</RequiresPatches>
           <Children />
         </Control>
@@ -180,7 +180,7 @@
           <Location>900,398</Location>
           <Size>398,398</Size>
           <Hidden>False</Hidden>
-          <ViewportName>AH_64D_RIGHT_MFCD_CPG</ViewportName>
+          <EmbeddedViewportName>AH_64D_RIGHT_MFCD_CPG</EmbeddedViewportName>
           <RequiresPatches>True</RequiresPatches>
           <Children />
         </Control>
@@ -206,7 +206,7 @@
           <Location>900,0</Location>
           <Size>398,398</Size>
           <Hidden>False</Hidden>
-          <ViewportName>AH_64D_LEFT_MFCD_CPG</ViewportName>
+          <EmbeddedViewportName>AH_64D_LEFT_MFCD_CPG</EmbeddedViewportName>
           <RequiresPatches>True</RequiresPatches>
           <Children />
         </Control>

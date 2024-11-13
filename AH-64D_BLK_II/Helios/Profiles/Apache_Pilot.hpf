@@ -355,7 +355,7 @@
                   <InitialRotation>0</InitialRotation>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.Image" Name="Altimeter Bezel" SnapTarget="False" Locked="False">
+                <Control TypeIdentifier="Helios.Base.Image" Name="Altimeter Bezel" SnapTarget="False" Locked="True">
                   <Image>AH-64D_blk_II\BlueFinBima\Altimeter\Altimeter_Bezel.png</Image>
                   <Alignment>Stretched</Alignment>
                   <CornerRadius>0</CornerRadius>
