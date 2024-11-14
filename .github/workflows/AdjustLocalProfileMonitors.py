@@ -33,9 +33,9 @@ print("Reading additional binding XML: ",hpfBindingFileName1)
 bindingsRoot = parse(hpfBindingFileName1).getroot()
 
 # Remove embedded viewports from the profile
-for el in root.iter("EmbeddedViewportName"):
-    print("Removing ",el.tag ,el.text)
-    el.text = ""
+#for el in root.iter("EmbeddedViewportName"):
+#    print("Removing ",el.tag ,el.text)
+#    el.text = ""
 # The above used to be OK, but now we need to remove the RequiresPatches as well
 for el in root.iter("Control"):
     if el.attrib['TypeIdentifier'].find("Helios.AH64D.MFD") >= 0 or el.attrib["TypeIdentifier"].find("Helios.AH64D.EUFD") >= 0 or el.attrib["TypeIdentifier"].find("TEDAC") >= 0:
@@ -44,8 +44,8 @@ for el in root.iter("Control"):
             el.remove(el1)
             print("Removing EmbeddedViewportName element for ", el.attrib['TypeIdentifier'] )
         for el1 in el.iter("RequiresPatches"):
-            el.remove(el1)
-            print("Removing RequiresPatches element for ", el.attrib['TypeIdentifier'] )
+            el1.text = "False"
+            print("Changing RequiresPatches for ", el.attrib['TypeIdentifier'], " to False" )
 
 # Alter the location of the monitor so that it is positioned at the far right
 for el in root.iter("Monitor"):
