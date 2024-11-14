@@ -39,13 +39,14 @@ for el in root.iter("EmbeddedViewportName"):
 # The above used to be OK, but now we need to remove the RequiresPatches as well
 for el in root.iter("Control"):
     if el.attrib['TypeIdentifier'].find("Helios.AH64D.") >= 0:
+        print("Found control ", el.attrib['TypeIdentifier'])
         if el.attrib['TypeIdentifier'].find("Helios.AH64D.MFD") >= 0 or el.attrib["TypeIdentifier"].find("Helios.AH64D.EUFD") >= 0:
             for el1 in el.iter("EmbeddedViewportName"):
                 el.remove(el1)
-				print("Removing EmbeddedViewportName element for ", el.attrib['TypeIdentifier'].text )
+                print("Removing EmbeddedViewportName element for ", el.attrib['TypeIdentifier'] )
             for el1 in el.iter("RequriresPatches"):
                 el.remove(el1)
-				print("Removing RequiresPatches element for ", el.attrib['TypeIdentifier'].text )
+                print("Removing RequiresPatches element for ", el.attrib['TypeIdentifier'] )
 
 # Alter the location of the monitor so that it is positioned at the far right
 for el in root.iter("Monitor"):
