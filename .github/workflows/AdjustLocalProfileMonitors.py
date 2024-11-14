@@ -42,8 +42,10 @@ for el in root.iter("Control"):
         if el.attrib['TypeIdentifier'].find("Helios.AH64D.MFD") >= 0 or el.attrib["TypeIdentifier"].find("Helios.AH64D.EUFD") >= 0:
             for el1 in el.iter("EmbeddedViewportName"):
                 el.remove(el1)
+				print("Removing EmbeddedViewportName element for ", el.attrib['TypeIdentifier'].text )
             for el1 in el.iter("RequriresPatches"):
                 el.remove(el1)
+				print("Removing RequiresPatches element for ", el.attrib['TypeIdentifier'].text )
 
 # Alter the location of the monitor so that it is positioned at the far right
 for el in root.iter("Monitor"):
