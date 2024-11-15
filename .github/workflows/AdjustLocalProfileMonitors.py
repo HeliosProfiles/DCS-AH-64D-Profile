@@ -44,8 +44,10 @@ for el in root.iter("Control"):
             el.remove(el1)
             print("Removing EmbeddedViewportName element for ", el.attrib['TypeIdentifier'] )
         for el1 in el.iter("RequiresPatches"):
-            el1.text = "False"
-            print("Changing RequiresPatches for ", el.attrib['TypeIdentifier'], " to False" )
+            el.remove(el1)
+            print("Removing RequiresPatches element for ", el.attrib['TypeIdentifier'] )
+#           el1.text = "False"
+#           print("Changing RequiresPatches for ", el.attrib['TypeIdentifier'], " to False" )
 
 # Alter the location of the monitor so that it is positioned at the far right
 for el in root.iter("Monitor"):
