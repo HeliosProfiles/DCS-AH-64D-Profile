@@ -7398,12 +7398,12 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.Altitude.changed" />
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Altimeter.Altitude.changed" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Altimeter;Helios.AH64D.Altimeter;Altimeter" Name="set.altitude" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.Pressure.changed" />
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Altimeter.Pressure.changed" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Altimeter;Helios.AH64D.Altimeter;Altimeter" Name="set.air pressure" />
       <TriggerValue />
     </Binding>
