@@ -13,7 +13,7 @@
         <Control TypeIdentifier="Helios.Panel" Name="CPG Cockpit" SnapTarget="True" Locked="False">
           <Location>0,0</Location>
           <Size>1920,1080</Size>
-          <Hidden>True</Hidden>
+          <Hidden>False</Hidden>
           <Background>
             <Image>AH-64D_BLK_II\BlueFinBima\1080pBackgroundCPG.png</Image>
             <ImageAlignment>Centered</ImageAlignment>
