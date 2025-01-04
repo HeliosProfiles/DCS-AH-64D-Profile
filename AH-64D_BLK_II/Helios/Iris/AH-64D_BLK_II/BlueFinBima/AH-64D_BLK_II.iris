@@ -111,4 +111,13 @@
     </ViewPort>
   </ViewPorts>
   <PollingInterval>100</PollingInterval>
+  <GlobalImageAdjustment>
+    <Brightness>1.0</Brightness>
+    <RedBrightness>1.0</RedBrightness>
+    <GreenBrightness>1.0</GreenBrightness>
+    <BlueBrightness>1.0</BlueBrightness>
+    <AlphaBrightness>1.0</AlphaBrightness>
+    <Gamma>1.0</Gamma>
+    <Contrast>1.0</Contrast>
+  </GlobalImageAdjustment>
 </IrisConfig>
