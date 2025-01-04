@@ -69,9 +69,9 @@ jobs:
           echo "Iris Directory Listing"
           ls '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/'
           echo "Create Iris configurations for Pilot and Co-Pilot (Remote version)"
-          python .github/workflows/AdjustLocalIrisConfig.py '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}.iris' '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Pilot.iris'  '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_CPG.iris' 0 0 0 0
+          python .github/workflows/AdjustLocalIrisConfig.py '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.VEHICLE }}.iris' '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.VEHICLE }}_Pilot.iris'  '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.VEHICLE }}_CPG.iris' 0 0 0 0
           echo "Create Iris configurations for Pilot and Co-Pilot and adjust the screen locations (Local version)"
-          python .github/workflows/AdjustLocalIrisConfig.py '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Local.iris' '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Pilot_Local.iris'  '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_CPG_Local.iris' -1920 0 1920 0
+          python .github/workflows/AdjustLocalIrisConfig.py '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.VEHICLE }}_Local.iris' '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.VEHICLE }}_Pilot_Local.iris'  '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.VEHICLE }}_CPG_Local.iris' -1920 0 1920 0
           echo "Create Local version of the dual cockpit Apache Profile with adjusted monitors"
           python .github/workflows/AdjustLocalProfileMonitors.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' '.github/workflows/Monitor0.xml' '.github/workflows/Bindings0.xml' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
           # python .github/workflows/apply_patch.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' ".github/workflows/${{ env.PROFILENAME }}.hpf.gpatch" '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
@@ -91,7 +91,7 @@ jobs:
           sed -i -- 's#_ProjectURL#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_Repository#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_commit#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
-          fnStub=$(echo ${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/$GITHUB_ACTOR/${{ env.PROFILENAME }})
+          fnStub=$(echo ${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/$GITHUB_ACTOR/${{ env.VEHICLE }})
           sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}.iris
           sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_Pilot.iris
           sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_CPG.iris
